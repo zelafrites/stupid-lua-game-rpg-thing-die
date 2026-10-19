@@ -5,6 +5,7 @@ require("utils.rooms")
 require("utils.typewriter")
 
 COMBAT_INIT = require("comp.combat")
+TRAVEL = require("comp.travel")
 
 -- Game variables
 TURNS = 0
@@ -30,7 +31,7 @@ while true do
     
     if mchoice then
         if mchoice == 1 then
-            require("comp.travel")
+            TRAVEL()
         elseif mchoice == 2 then
             print("---------------------")
             typewrite("Player Stats:")
